@@ -1,0 +1,12 @@
+dataset/
+models/*
+!models/.gitkeep
+output/*
+!output/.gitkeep
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.idea/
