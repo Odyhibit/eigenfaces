@@ -1,8 +1,7 @@
 # Eigenfaces — Compact Facial Image Encoding
 
 An educational, noncommercial Python experiment: represent a grayscale face in
-32–96 bytes using principal component analysis (PCA) and a shared model. QR code
-generation is outside this phase. These tiny payloads measure a tradeoff between
+32–96 bytes using principal component analysis (PCA) and a shared model. These tiny payloads measure a tradeoff between
 size and reconstruction quality; they are not identity verification or encryption.
 
 ## Installation
@@ -21,13 +20,11 @@ pipeline; pytest runs the synthetic tests. No GPU or deep learning framework is 
 ## Dataset
 
 Obtain the aligned and cropped CelebA JPEGs separately from the
-[official CelebA project](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
-Place them in `dataset/` or `dataset/img_align_celeba/`. Discovery is recursive;
+[official CelebA project](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). 
 original images are read only. Dataset, models, and generated outputs are ignored
 by Git. Do not commit or redistribute the dataset or generated face artifacts.
 
-The default paths are anchored to this project's directory, including when invoking
-`main.py` from another working directory. Explicit relative paths are resolved from
+Explicit relative paths are resolved from
 the current working directory. `--dataset`, `--model`, and `--output` override paths.
 
 ## Training
