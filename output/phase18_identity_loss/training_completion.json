@@ -1,0 +1,18 @@
+{
+  "epochs": 200,
+  "optimizer_steps": 58000,
+  "selected_epoch": 147,
+  "final_epoch": 200,
+  "selected_validation_original_reconstruction_loss": 0.07852342728822016,
+  "final_validation_original_reconstruction_loss": 0.08000980092365893,
+  "selection": "minimum Phase14 original unweighted validation reconstruction loss",
+  "selected_equals_final": false,
+  "training_seconds": 30016.745363599854,
+  "peak_gpu_allocated_bytes": 2792674304,
+  "best_checkpoint_sha256": "9213e4ae6af655a023d5b790f9e1031ad682843b49f34ab39b24844bbe41764f",
+  "last_checkpoint_sha256": "b3ef5fc9592576cba40f6ed67b93bd0d16fcda6368b528ada461f0e56143569f",
+  "decoder_sha256": "9e362f2491c1421903547019d5cbcaf8950d9100b67c2939e63d6e5ec5f21d73",
+  "experiment_sha256": "7be40dc4e2c446b3da10a7b9315a94643500b3317bdc08c3c510a21bb92dc870",
+  "selected_checkpoint_epoch": 147,
+  "finalization": "checkpoint-only; training already completed successfully"
+}

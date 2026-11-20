@@ -8,7 +8,7 @@ import numpy as np
 from .preprocess import IMAGE_SIZE
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_DATASET = ROOT / "dataset"
+DEFAULT_DATASET = Path(r"E:\eigenfaces\img_align_celeba")
 DEFAULT_MODEL = ROOT / "models" / "eigenfaces.joblib"
 DEFAULT_OUTPUT = ROOT / "output"
 PAYLOAD_SIZES = (32, 48, 64, 80, 96)
@@ -17,7 +17,7 @@ FORMAT_VERSION = 1
 
 def output_path(path: str | Path) -> Path:
     path = Path(path)
-    if path.resolve().is_relative_to(DEFAULT_DATASET.resolve()):
+    if any(path.resolve().is_relative_to(root.resolve()) for root in (DEFAULT_DATASET, ROOT / "dataset")):
         raise ValueError("Output must be outside the original dataset directory")
     path.parent.mkdir(parents=True, exist_ok=True)
     return path
